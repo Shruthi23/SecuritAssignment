@@ -1,7 +1,7 @@
 const AWS=require('aws-sdk');
 const s3 = new AWS.S3({
-    accessKeyId: "AKIARW2ZVLFK34YTCIVS",  
-    secretAccessKey: "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", 
+    accessKeyId: process.env.accessKeyId,  
+    secretAccessKey: process.env.secret, 
     //Bucket: "mmysecurityfiles"     
   });
   var params = {
